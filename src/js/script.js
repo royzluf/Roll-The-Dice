@@ -65,14 +65,13 @@ class App {
    };
 
    rollDice = () => {
-      console.log(this);
       if (this.gameEnded) {
          return;
       }
       // Generate random roll dice
       const rollDice = Math.floor(Math.random() * 6) + 1;
       // this.diceElement.src = `../src/img/dice-${rollDice}.png`;
-      this.diceElement.src = this.dicesImages[rollDice];
+      this.diceElement.src = this.dicesImages[rollDice - 1];
       this.diceElement.classList.remove('hidden');
 
       // add dice result to current score or switch player if the dice result is 1
