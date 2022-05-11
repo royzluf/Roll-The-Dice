@@ -1,8 +1,7 @@
 {
    "name": "roll-the-dice",
    "version": "1.0.0",
-   "description": "",
-   "main": "index.js",
+   "description": "roll The Dice Game",
    "scripts": {
       "start": "parcel index.html",
       "build": "parcel build index.html --dist-dir ./dist"
