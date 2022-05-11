@@ -70,7 +70,7 @@ class App {
       }
       // Generate random roll dice
       const rollDice = Math.floor(Math.random() * 6) + 1;
-      // this.diceElement.src = `../src/img/dice-${rollDice}.png`;
+
       this.diceElement.src = this.dicesImages[rollDice - 1];
       this.diceElement.classList.remove('hidden');
 
